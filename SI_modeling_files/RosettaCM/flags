@@ -1,0 +1,15 @@
+# i/o
+-in:file:fasta Bacil_thread.fasta
+-nstruct 2
+-parser:protocol rosetta_cm.xml
+
+-hybridize:stage1_probability 1.0
+-run:preserve_header
+
+# relax options
+-extra_res_fa X00.params
+-extra_res_cen X00.params
+-relax:jump_move true
+-default_max_cycles 2000
+
+
